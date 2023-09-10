@@ -850,6 +850,7 @@ set (PCH_SOURCES
 	playsim/a_pickups.cpp
 	playsim/a_action.cpp
 	playsim/a_corona.cpp
+	playsim/a_fogball.cpp
 	playsim/a_decals.cpp
 	playsim/a_dynlight.cpp
 	playsim/a_flashfader.cpp
