@@ -71,7 +71,8 @@ public:
 			uint64_t SWLightRadial : 1; // SWLIGHT_RADIAL
 			uint64_t SWLightBanded : 1; // SWLIGHT_BANDED
 			uint64_t LightMode : 2;     // LIGHTMODE_DEFAULT, LIGHTMODE_SOFTWARE, LIGHTMODE_VANILLA, LIGHTMODE_BUILD
-			uint64_t Unused : 45;
+			uint64_t FogBalls : 1;      // FOGBALLS
+			uint64_t Unused : 44;
 		};
 		uint64_t AsQWORD = 0;
 	};
