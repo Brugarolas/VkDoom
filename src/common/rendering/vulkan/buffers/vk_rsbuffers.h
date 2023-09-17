@@ -50,6 +50,14 @@ public:
 		void* Data = nullptr;
 	} Bonebuffer;
 
+	struct
+	{
+		int UploadIndex = 0;
+		int Count = 1000;
+		std::unique_ptr<VulkanBuffer> UBO;
+		void* Data = nullptr;
+	} Fogballbuffer;
+
 	std::unique_ptr<VkStreamBuffer> MatrixBuffer;
 	std::unique_ptr<VkStreamBuffer> StreamBuffer;
 };

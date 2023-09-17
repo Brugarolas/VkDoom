@@ -119,6 +119,19 @@ layout(set = 1, binding = 4, std430) buffer BoneBufferSSO
 	mat4 bones[];
 };
 
+struct Fogball
+{
+	vec3 position;
+	float radius;
+	vec3 color;
+	float fog;
+};
+
+layout(set = 1, binding = 5, std140) uniform FogballBufferUBO
+{
+	Fogball fogballs[MAX_FOGBALL_DATA];
+};
+
 // textures
 layout(set = 2, binding = 0) uniform sampler2D tex;
 layout(set = 2, binding = 1) uniform sampler2D texture2;
@@ -138,7 +151,7 @@ layout(push_constant) uniform PushConstants
 	int uDataIndex; // streamdata index
 	int uLightIndex; // dynamic lights
 	int uBoneIndexBase; // bone animation
-	int padding;
+	int uFogballIndex; // fog balls
 };
 
 // material types

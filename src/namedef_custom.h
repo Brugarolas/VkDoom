@@ -870,3 +870,4 @@ xx(lm_sampledistance)
 xx(lm_gridsize)
 
 xx(Corona)
+xx(Fogball)
