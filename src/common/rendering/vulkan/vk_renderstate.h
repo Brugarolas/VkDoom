@@ -70,7 +70,7 @@ protected:
 	void ApplyDepthBias();
 	void ApplyScissor();
 	void ApplyViewport();
-	void ApplyStreamData();
+	void ApplySurfaceUniforms();
 	void ApplyMatrices();
 	void ApplyPushConstants();
 	void ApplyBufferSets();
@@ -112,7 +112,7 @@ protected:
 
 	uint32_t mLastViewpointOffset = 0xffffffff;
 	uint32_t mLastMatricesOffset = 0xffffffff;
-	uint32_t mLastStreamDataOffset = 0xffffffff;
+	uint32_t mLastSurfaceUniformsOffset = 0xffffffff;
 	uint32_t mLastLightsOffset = 0;
 	uint32_t mViewpointOffset = 0;
 
