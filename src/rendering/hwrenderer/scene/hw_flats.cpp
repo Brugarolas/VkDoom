@@ -522,9 +522,9 @@ void HWFlat::ProcessSector(HWDrawInfo *di, FRenderState& state, sector_t * front
 				unsigned int count = sector->e->XFloor.ffloors.Size() + 1;
 				for (unsigned int j = 0; j < count; j++)
 				{
-					if (auto lightmap = sector->subsectors[i]->lightmap[plane][j])
+					if (auto surface = sector->subsectors[i]->surface[plane][j])
 					{
-						di->PushVisibleSurface(lightmap);
+						di->PushVisibleSurface(surface);
 					}
 				}
 			}
